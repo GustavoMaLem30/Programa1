@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil de {{student.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img [src] = "student.photo"/>
+    <ion-card-content>
+      <h2>
+        NÚMERO DE CONTROL: {{student.controlnumber}}
+        <ion-chip color="primary" class="ion-floar-right">
+          <ion-label>{{student.career}}</ion-label>
+        </ion-chip><br>
+        CORREO: {{student.email}}<br>
+        CURP: {{student.curp}}<br>
+        EDAD: {{student.age}}
+      </h2>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
